@@ -16,6 +16,8 @@ public class ex15_ConcatString {
 
 		System.out.println(first_name + last_name + (a + b));
 
-		// BODMAS - Bracket of Div, mul, add, sub
+		// BODMAS rule - Bracket of Div, mul, add, sub
+		System.out.println((9 * 3 / 9 + 1) * 3);
+        System.out.println((27 / 9 + 1) * 3);
 	}
 }
