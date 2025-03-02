@@ -1,0 +1,30 @@
+Rules (Syntax Restrictions)
+Valid Identifiers: Class names must be valid Java identifiers. 
+They can contain letters (A-Z, a-z), digits (0-9), underscores (_), and dollar signs ($), but cannot start with a digit.
+No Reserved Keywords: A class name cannot be a Java reserved keyword (e.g., class, public, static).
+No Special Characters: Other than _ and $, special characters (e.g., @, #, !, -, *, etc.) are not allowed.
+Case-Sensitive: Java is case-sensitive, so MyClass and myclass are different.
+File Name Matching: If the class is public, its filename must match the class name 
+(e.g., MyClass.java should contain public class MyClass).
+
+✅ Valid Class Names
+class MyClass {}  
+class EmployeeDetails {}  
+class $SpecialCase {}  
+class _Temporary {}  
+
+❌ Invalid Class Names
+class 2MyClass {}    // ❌ Cannot start with a digit
+class class {}       // ❌ Reserved keyword
+class my-class {}    // ❌ Hyphen not allowed
+class my class {}    // ❌ Spaces not allowed
+
+
+Conventions (Best Practices)
+Use PascalCase: Class names should start with an uppercase letter, and each subsequent word should also start with an uppercase letter 
+(e.g., MyClass, EmployeeDetails).
+Avoid Underscores (_) and Dollar Signs ($): These are typically reserved for internal use 
+(e.g., generated class names or special identifiers).
+Use Nouns: Since classes represent objects or concepts, use noun-based names (Person, Car, BankAccount).
+Avoid Single-letter Class Names: Except for temporary or utility classes like T in generics.
+Follow Domain Naming Conventions: For package-level organization, use reverse domain notation (com.example.project).
